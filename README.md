@@ -17,6 +17,15 @@ Spenser
   > run 'nodemon' to start server
 
 
+>> NOTE:
+  > We can optionally make a 'controllers' folder and have controllers for each model, which index.js then refers to in the routes. But this might be over-kill for us.
+
+
+
+
+
+
+
 
 
 
@@ -27,3 +36,7 @@ Spenser
 
 >> TO-DO's
   > look into embedded models, for Movie ShowTimes
+
+>> ISSUES
+  > do you need to redirect on the backend for delete routes?
+  > wait, do you need to respond with json data for delete, update, and create? Shouldn't that be done on front end?
