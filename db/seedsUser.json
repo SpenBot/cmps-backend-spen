@@ -2,7 +2,26 @@
 
   {
     "username": "MovieGuy999",
-    "password": "poopy456"
+    "password": "poopy456",
+    "photo_url": "https://blog.dar.org/sites/default/files/default_images/icon-user-default.png"
+  },
+
+  {
+    "username": "TomCruise",
+    "password": "poopy456",
+    "photo_url": "https://blog.dar.org/sites/default/files/default_images/icon-user-default.png"
+  },
+
+  {
+    "username": "FilmBuff41",
+    "password": "poopy456",
+    "photo_url": "https://blog.dar.org/sites/default/files/default_images/icon-user-default.png"
+  },
+
+  {
+    "username": "ILoveDaMovies",
+    "password": "poopy456",
+    "photo_url": "https://blog.dar.org/sites/default/files/default_images/icon-user-default.png"
   }
 
 

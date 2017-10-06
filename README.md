@@ -13,7 +13,7 @@ Spenser
   > in new terminal window, run '$ mongo'
   > in mongo, run 'show dbs' to see databases
   > then run '$ use cmps_db' to create local database
-  > in project directory, run '$ node db/seeds.js' to seed database, CTRL-C to escape
+  > in project directory (not mongo), run '$ node db/seeds.js' to seed database, CTRL-C to escape
   > run 'nodemon' to start server
 
 

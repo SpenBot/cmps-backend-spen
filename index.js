@@ -5,6 +5,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+
+/// require models from models.js ///
 const Models = require('./db/models.js')
 
 /// require database connection module ///
@@ -32,6 +34,15 @@ app.listen(4000, () => {
     console.log("\n\tServer active. Listening on port 4000\n")
 })
 
+
+
+
+
+
+////////////// ROUTES /////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+/// grab each model, from exported models  ///
 const User = Models.User
 const Theater = Models.Theater
 const Movie = Models.Movie

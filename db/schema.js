@@ -15,6 +15,7 @@ const Schema = mongoose.Schema
 const UserSchema = new Schema({
   "username": String,
   "password": String,
+  "photo_url": String,
   "fav_theaters": String,
   "movies_wishlist": String,
   "search_history": String
@@ -28,9 +29,11 @@ const TheaterSchema = new Schema({
 
 const MovieSchema = new Schema({
   "title": String,
+  "rating": Number,
   "show_1": String,
   "show_2": String,
   "show_3": String,
+  "photo_url": String,
   "theater": String
 })
 

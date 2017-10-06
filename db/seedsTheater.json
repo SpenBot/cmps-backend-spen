@@ -4,8 +4,37 @@
     "name": "AMC Raceway",
     "address": "123 New Street",
     "photo_url": "http://cf.nearsay.com/sites/default/files/styles/480x240/public/content_images/amc-theatres-outside.jpg?itok=iUN1tZy8"
-  }
+  },
 
+  {
+    "name": "Mr. Movies",
+    "address": "1500 Washington Street",
+    "photo_url": "http://cf.nearsay.com/sites/default/files/styles/480x240/public/content_images/amc-theatres-outside.jpg?itok=iUN1tZy8"
+  },
+
+  {
+    "name": "Reels Movie Theater",
+    "address": "42 Common Drive",
+    "photo_url": "http://cf.nearsay.com/sites/default/files/styles/480x240/public/content_images/amc-theatres-outside.jpg?itok=iUN1tZy8"
+  },
+
+  {
+    "name": "National Theater",
+    "address": "500 General Street",
+    "photo_url": "http://cf.nearsay.com/sites/default/files/styles/480x240/public/content_images/amc-theatres-outside.jpg?itok=iUN1tZy8"
+  },
+
+  {
+    "name": "Warner Theater",
+    "address": "99 South Street",
+    "photo_url": "http://cf.nearsay.com/sites/default/files/styles/480x240/public/content_images/amc-theatres-outside.jpg?itok=iUN1tZy8"
+  },
+
+  {
+    "name": "Wooly Mammoth Theater",
+    "address": "770 West Drive",
+    "photo_url": "http://cf.nearsay.com/sites/default/files/styles/480x240/public/content_images/amc-theatres-outside.jpg?itok=iUN1tZy8"
+  }
 
 
 ]
