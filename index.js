@@ -57,6 +57,19 @@ app.get('/api/movies', (req, res) => {
     })
 })
 
+app.get("/api/movies/:title", function(req, res){
+  Movie.findOne({title: req.params.title}).then(function(movie){
+    res.json(movie)
+    });
+  });
+
+app.post("/api/movies", function(req, res){
+  Movie.create(req.body.movie).then(task => {
+    res.json('/movies/'+ movie.titile)
+  });
+});
+
+
 app.get('/api/users', (req, res) => {
   User.find()
     .then((users) => {
@@ -68,6 +81,19 @@ app.get('/api/users', (req, res) => {
 })
 
 
+app.get("/api/users/:username", function(req, res){
+  User.findOne({username: req.params.username}).then(function(user){
+    res.json(user)
+    });
+  });
+
+app.post("/api/users", function(req, res){
+  User.create(req.body.user).then(user => {
+    res.json('/users/'+ username)
+  });
+});
+
+
 app.get('/api/theaters', (req, res) => {
   Theater.find()
     .then((theaters) => {
@@ -77,3 +103,16 @@ app.get('/api/theaters', (req, res) => {
       console.log(err)
     })
 })
+
+
+app.get("/api/theaters/:name", function(req, res){
+  Theater.findOne({name: req.params.name}).then(function(theater){
+    res.json(theater)
+    });
+  });
+
+app.post("/api/theaters", function(req, res){
+  Theater.create(req.body.theater).then(theater => {
+    res.json('/theaters/'+ name)
+  });
+});
