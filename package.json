@@ -1,0 +1,26 @@
+{
+  "name": "cmps-backend",
+  "version": "1.0.0",
+  "description": "Express Repo for CMPS Project 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpenBot/cmps-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpenBot/cmps-backend/issues"
+  },
+  "homepage": "https://github.com/SpenBot/cmps-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.1",
+    "mongoose": "^4.12.0"
+  }
+}
