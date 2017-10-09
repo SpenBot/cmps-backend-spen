@@ -9,8 +9,11 @@ var mongoose = require('mongoose')
 
 
 //// establish connection to database ////
-mongoose.connect('mongodb://localhost/cmps_db');
-
+if (process.env.NODE_ENV == "production") {
+  mongoose.connect(process.env.MLAB_URL)
+} else {
+  mongoose.connect('mongodb://localhost/cmps_db');
+}
 
 //// console log database connection status ////
 const db = mongoose.connection
