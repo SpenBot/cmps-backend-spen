@@ -1,50 +1,20 @@
+// DEPENDENCIES //
 
-////////////// DEPENDENCIES //////////////////////////////////
-//////////////////////////////////////////////////////////////
-
-//// connect to database ////
+// connect to database //
 const mongoose = require('./connection.js')
 
-
-
-////////////// CREATING THE SCHEMA ////////////////////////////
-///////////////////////////////////////////////////////////////
-
+// CREATING THE SCHEMA //
 const Schema = mongoose.Schema
 
 const UserSchema = new Schema({
   "username": String,
   "password": String,
-  "photo_url": String,
-  "fav_theaters": String,
-  "movies_wishlist": String,
-  "search_history": String
-})
-
-const TheaterSchema = new Schema({
-  "name": String,
-  "address": String,
   "photo_url": String
 })
 
-const MovieSchema = new Schema({
-  "title": String,
-  "rating": Number,
-  "show_1": String,
-  "show_2": String,
-  "show_3": String,
-  "photo_url": String,
-  "theater": String
-})
+// EXPORT MODULE //
 
-
-
-////////////// EXPORT MODULE /////////////////////////////////////
-//////////////////////////////////////////////////////////////////
-
-/// export schemas ///
+// export schemas //
 module.exports = {
-  UserSchema,
-  TheaterSchema,
-  MovieSchema
+  UserSchema
 }
