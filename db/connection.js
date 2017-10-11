@@ -3,10 +3,17 @@
 // require mongoose //
 var mongoose = require('mongoose')
 
-// establish connection to database //
-mongoose.connect('mongodb://localhost/cmps_db');
 
-// console log database connection status //
+
+//// establish connection to database ////
+if (process.env.NODE_ENV == "production") {
+  mongoose.connect(process.env.MLAB_URL)
+} else {
+  mongoose.connect('mongodb://localhost/cmps_db');
+}
+
+//// console log database connection status ////
+
 const db = mongoose.connection
 
 db.on('error', err => {

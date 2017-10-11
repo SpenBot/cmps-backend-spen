@@ -27,7 +27,7 @@ app.use(cors())
 
 // RUN SERVER //
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
     console.log("\n\tServer active. Listening on port 4000\n")
 })
 
@@ -65,6 +65,7 @@ app.post("/api/users", (req, res) => {
     console.log("user:", user)
     res.json('/users/'+ user.username)
     res.json(user)
+
   });
 });
 
