@@ -70,7 +70,7 @@ app.post("/api/users", (req, res) => {
 });
 
 // update user //
-app.update('/api/users/:username', (req, res) => {
+app.post('/api/users/:username', (req, res) => {
   User.findOneAndUpdate({username: req.params.username}, req.body.user, {new: true}).then(user => {
     res.json('/users/' + user.username)
   })
