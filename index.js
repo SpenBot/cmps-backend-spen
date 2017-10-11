@@ -118,7 +118,7 @@ app.get("/api/users/:username", function(req, res){
 /// create user ///
 app.post("/api/users", function(req, res){
   User.create(req.body.user).then(user => {
-    res.json('/users/'+ username)
+    res.json('/users/'+ user.username)
   });
 });
 
@@ -168,7 +168,7 @@ app.get("/api/theaters/:name", function(req, res){
 /// create theater ///
 app.post("/api/theaters", function(req, res){
   Theater.create(req.body.theater).then(theater => {
-    res.json('/theaters/'+ name)
+    res.json('/theaters/'+ theater.name)
   });
 });
 
