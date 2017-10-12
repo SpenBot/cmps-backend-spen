@@ -77,7 +77,7 @@ app.post('/api/users/:username', (req, res) => {
 })
 
 // delete user //
-app.delete("/users/:username/delete", (req, res) => {
+app.delete("/api/users/:username/delete", (req, res) => {
   User.findOneAndRemove({username: req.params.username})
     .then(() => {
       res.json("/users")
