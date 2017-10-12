@@ -59,7 +59,7 @@ app.get("/api/users/:username", (req, res) => {
   });
 
 // create user //
-app.post("/api/users", (req, res) => {
+app.put("/api/users", (req, res) => {
   User.create(req.body).then(user => {
     console.log("post api/users", req.body);
     console.log("user:", user)
