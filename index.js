@@ -70,14 +70,14 @@ app.post("/api/users", (req, res) => {
 });
 
 // update user //
-app.post('/api/users/:username', (req, res) => {
+app.put('/api/users/:username', (req, res) => {
   User.findOneAndUpdate({username: req.params.username}, req.body.user, {new: true}).then(user => {
     res.json('/users/' + user.username)
   })
 })
 
 // delete user //
-app.delete("/users/:username/delete", (req, res) => {
+app.delete("api/users/:username/delete", (req, res) => {
   User.findOneAndRemove({username: req.params.username})
     .then(() => {
       res.json("/users")
