@@ -71,8 +71,8 @@ app.post("/api/users", (req, res) => {
 
 // update user //
 app.put('/api/users/:username', (req, res) => {
-  User.findOneAndUpdate({username: req.params.username}, req.body.user, {new: true}).then(user => {
-    res.json('/users/' + user.username)
+  User.findOneAndUpdate({username: req.params.username}, req.body, {new: true}).then(user => {
+    res.json(user)
   })
   console.log(`Put method called ${req}`)
 })
