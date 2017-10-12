@@ -59,7 +59,7 @@ app.get("/api/users/:username", (req, res) => {
   });
 
 // create user //
-app.post("/api/users", (req, res) => {
+app.put("/api/users", (req, res) => {
   User.create(req.body).then(user => {
     console.log("post api/users", req.body);
     console.log("user:", user)
@@ -72,7 +72,7 @@ app.post("/api/users", (req, res) => {
 // update user //
 app.put('/api/users/:username', (req, res) => {
   User.findOneAndUpdate({username: req.params.username}, req.body.user, {new: true}).then(user => {
-    res.json('/users/' + user.username)
+    res.json('/users/' + user.username) //change to user
   })
 })
 
